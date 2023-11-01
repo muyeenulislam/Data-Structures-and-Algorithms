@@ -27,6 +27,8 @@ firstRecurringCharacter1([2, 1, 1, 2, 3, 5, 1, 2, 4]);
 firstRecurringCharacter1([2, 3, 4, 5]);
 firstRecurringCharacter1([2, 5, 5, 2, 3, 5, 1, 2, 4]);
 
+///////////////////////////////////////////////////
+
 const firstRecurringCharacter2 = (input) => {
   const mySet = new Set();
   for (let i = 0; i < input.length; i++) {
@@ -42,6 +44,8 @@ firstRecurringCharacter2([2, 1, 1, 2, 3, 5, 1, 2, 4]);
 firstRecurringCharacter2([2, 3, 4, 5]);
 firstRecurringCharacter2([2, 5, 5, 2, 3, 5, 1, 2, 4]);
 
+///////////////////////////////////////////////////
+
 const firstRecurringCharacter3 = (input) => {
   const myMap = new Map();
   for (let i = 0; i < input.length; i++) {
@@ -56,6 +60,8 @@ firstRecurringCharacter3([2, 5, 1, 2, 3, 5, 1, 2, 4]);
 firstRecurringCharacter3([2, 1, 1, 2, 3, 5, 1, 2, 4]);
 firstRecurringCharacter3([2, 3, 4, 5]);
 firstRecurringCharacter3([2, 5, 5, 2, 3, 5, 1, 2, 4]);
+
+///////////////////////////////////////////////////
 
 const firstRecurringCharacter4 = (input) => {
   const hashtable = {};
