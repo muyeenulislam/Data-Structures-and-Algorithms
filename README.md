@@ -1,4 +1,4 @@
-Data Structures and Algorithms using Javascript
+<b>Data Structures and Algorithms using Javascript</b>
 
 Big O Time complexity chart
 
