@@ -3,7 +3,7 @@ const array2 = ["z", "y", "a"];
 
 const arrToMap = (arr1) => {
   const map = {};
-  array1.map((item) => {
+  arr1.map((item) => {
     if (!map[item]) {
       const item1 = item;
       map[item1] = true;
@@ -15,17 +15,18 @@ const arrToMap = (arr1) => {
   //     map[item] = true;
   //   }
   // }
-  console.log(map);
   return map;
 };
 
 const arrInMap = (map, arr2) => {
-  for (let j = 0; j < arr2.length; j++) {
-    if (map[arr2[j]]) {
-      return true;
-    }
-  }
-  return false;
+  const hasCommmon = arr2.map((item) => (map[item] ? true : false));
+
+  // for (let j = 0; j < arr2.length; j++) {
+  //   if (map[arr2[j]]) {
+  //     return true;
+  //   }
+  // }
+  return hasCommmon;
 };
 
 const containsCommonItem2 = (arr1, arr2) => {
