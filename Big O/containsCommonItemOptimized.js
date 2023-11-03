@@ -3,12 +3,19 @@ const array2 = ["z", "y", "a"];
 
 const arrToMap = (arr1) => {
   const map = {};
-  for (let i = 0; i < arr1.length; i++) {
-    if (!map[arr1[i]]) {
-      const item = arr1[i];
-      map[item] = true;
+  array1.map((item) => {
+    if (!map[item]) {
+      const item1 = item;
+      map[item1] = true;
     }
-  }
+  });
+  // for (let i = 0; i < arr1.length; i++) {
+  //   if (!map[arr1[i]]) {
+  //     const item = arr1[i];
+  //     map[item] = true;
+  //   }
+  // }
+  console.log(map);
   return map;
 };
 
