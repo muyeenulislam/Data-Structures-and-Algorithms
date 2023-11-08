@@ -50,7 +50,7 @@ class DoublyLinkedList {
     newNode.next = follower;
     follower.prev = newNode;
     this.length++;
-    //   console.log(this)
+    console.log(this);
     return this.printList();
   }
   traverseToIndex(index) {
