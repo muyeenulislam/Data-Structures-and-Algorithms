@@ -99,5 +99,5 @@ console.log(myLinkedList.prepend(1));
 myLinkedList.insert(2, 99);
 console.log(myLinkedList.insert(20, 88));
 console.log(myLinkedList.printList());
-//   myLinkedList.remove(2)
-//   myLinkedList.reverse()
+myLinkedList.remove(2);
+// myLinkedList.reverse()
