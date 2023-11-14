@@ -28,18 +28,19 @@ class Queue {
     this.length++;
     return this;
   }
-  // dequeue(){  // O(1)
-  //   if (!this.first) {
-  //     return null;
-  //   }
-  //   if (this.first === this.last) {
-  //     this.last = null;
-  //   }
-  //   const holdingPointer = this.first;
-  //   this.first = this.first.next;
-  //   this.length--;
-  //   return this;
-  // }
+  dequeue() {
+    // O(1)
+    if (!this.first) {
+      return null;
+    }
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    const holdingPointer = this.first;
+    this.first = this.first.next;
+    this.length--;
+    return this;
+  }
 }
 
 const myQueue = new Queue();
