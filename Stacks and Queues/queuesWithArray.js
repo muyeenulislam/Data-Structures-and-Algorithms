@@ -1,3 +1,5 @@
+// queues are better with linked lists
+
 class Queue {
   constructor() {
     this.array = [];
