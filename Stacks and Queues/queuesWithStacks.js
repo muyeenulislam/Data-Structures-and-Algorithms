@@ -13,14 +13,14 @@ class CrazyQueue {
     return this;
   }
 
-  // dequeue() {
-  //   const length = this.last.length;
-  //   for (let i = 0; i < length; i++) {
-  //     this.first.push(this.last.pop());
-  //   }
-  //   this.first.pop();
-  //   return this;
-  // }
+  dequeue() {
+    const length = this.last.length;
+    for (let i = 0; i < length; i++) {
+      this.first.push(this.last.pop());
+    }
+    this.first.pop();
+    return this;
+  }
   peek() {
     if (this.last.length > 0) {
       return this.last[0];
